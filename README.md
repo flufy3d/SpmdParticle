@@ -1,5 +1,12 @@
 # SpmdParticle
 
+An Unity plugin for render massive particle,Accelerated by Intel SSE.
+
+------
+
+### Why Use CPU Accelerated Particle
+
+Becuase CPU particle will have easier to control more flexible. For Example particle self interaction. More suitable for massive if branch.
 
 ------
 
