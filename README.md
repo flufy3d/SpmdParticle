@@ -2,6 +2,8 @@
 
 An Unity plugin for render massive particle,Accelerated by Intel SSE.
 
+SpmdParticle only use GPU to render particle.All physical calculations completed on the CPU
+
 ------
 
 ### Why Use CPU Accelerated Particle
