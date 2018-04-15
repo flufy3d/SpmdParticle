@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.30341697, g: 0.31452927, b: 0.33823532, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -139,7 +139,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.63
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -195,7 +195,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &272981317
 MonoBehaviour:
@@ -274,8 +274,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 272981316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -4.55, z: -0.03}
-  m_LocalScale: {x: 6.1358747, y: 0.46254104, z: 6.220587}
+  m_LocalPosition: {x: 0.04, y: -4.47, z: -0.03}
+  m_LocalScale: {x: 27.68524, y: 2.086997, z: 28.067448}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_advection: 0.1
   m_pressure_stiffness: 500
   m_particle_size: 0.03
-  m_max_particle_num: 8888
+  m_max_particle_num: 80000
   m_coord_scale: {x: 1, y: 1, z: 1}
   m_world_div_x: 256
   m_world_div_y: 1
@@ -358,8 +358,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885385781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.38, y: 5.3, z: 13.68}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08}
+  m_LocalScale: {x: 19.817944, y: 7.175707, z: 18.51479}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -445,10 +445,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_targets: []
   m_shape: 1
-  m_emit_count: 100
+  m_emit_count: 4000
   m_velosity_base: {x: 0, y: 0, z: 0}
   m_velosity_random_diffuse: 0.5
-  m_lifetime: 30
+  m_lifetime: 20
   m_lifetime_random_diffuse: 1
   m_userdata: 0
 --- !u!4 &1316334192
@@ -458,8 +458,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316334190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.88, y: 2.32, z: 0.58}
-  m_LocalScale: {x: 3.49, y: 2.83, z: 2.33}
+  m_LocalPosition: {x: 0.88, y: 3, z: 0.58}
+  m_LocalScale: {x: 2.7345018, y: 1.7064295, z: 2.1728394}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 1636740334}
   - component: {fileID: 1636740333}
   - component: {fileID: 1636740332}
+  - component: {fileID: 1636740336}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -504,8 +505,8 @@ Camera:
   m_GameObject: {fileID: 1636740331}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.12683822, g: 0.1288793, b: 0.16911763, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -545,3 +546,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636740336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1636740331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: bdd12251778e93948a23e83b965a5fde, type: 2}

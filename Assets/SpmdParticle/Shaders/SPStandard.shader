@@ -28,6 +28,9 @@ Shader "SpmdParticle/Standard" {
 
             sampler2D _MainTex;
             fixed4 _Color;
+            fixed4 _HeatColor;
+            half _HeatThreshold;
+            half _HeatIntensity;
 
             struct Input {
                 float2 uv_MainTex;

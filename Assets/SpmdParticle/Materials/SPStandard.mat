@@ -24,8 +24,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Glossiness: 0.5
-    - _HeatIntensity: 1
-    - _HeatThreshold: 2
+    - _HeatIntensity: 0.8
+    - _HeatThreshold: 1.2
     - _Metallic: 0
     - g_fade_time: 0.3
     - g_size: 0.2
