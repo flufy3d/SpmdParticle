@@ -539,7 +539,7 @@ Transform:
   m_GameObject: {fileID: 1316334190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.88, y: 3, z: 0.58}
-  m_LocalScale: {x: 2.7345018, y: 1.7064295, z: 2.1728394}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -554,7 +554,6 @@ GameObject:
   - component: {fileID: 1432563305}
   - component: {fileID: 1432563307}
   - component: {fileID: 1432563306}
-  - component: {fileID: 1432563308}
   m_Layer: 5
   m_Name: FPS
   m_TagString: Untagged
@@ -619,20 +618,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432563304}
---- !u!114 &1432563308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1432563304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5121a55f809a454fa7862d10eec72d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_update_interval: 0.5
-  textFPS: {fileID: 1432563306}
-  textParticleNum: {fileID: 2124465896}
 --- !u!1 &1636740331
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +723,7 @@ GameObject:
   - component: {fileID: 2122227092}
   - component: {fileID: 2122227091}
   - component: {fileID: 2122227090}
+  - component: {fileID: 2122227094}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -822,6 +808,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2122227094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122227089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5121a55f809a454fa7862d10eec72d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_update_interval: 0.5
+  textFPS: {fileID: 1432563306}
+  textParticleNum: {fileID: 2124465896}
+  mode: 0
 --- !u!1 &2124465893
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +873,7 @@ MonoBehaviour:
   m_update_interval: 0.5
   textFPS: {fileID: 1432563306}
   textParticleNum: {fileID: 2124465896}
+  mode: 0
 --- !u!114 &2124465896
 MonoBehaviour:
   m_ObjectHideFlags: 0
